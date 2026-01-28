@@ -1,0 +1,19 @@
+{
+  "name": "cloudflare-ai-chat-reminder-agent",
+  "version": "0.1.0",
+  "description": "A minimal AI‑powered chat agent with reminder scheduling built on Cloudflare Agents",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "agents": "^0.3.3",
+    "ai": "^6.0.5",
+    "@ai-sdk/openai": "^3.0.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
