@@ -19,6 +19,13 @@ export default {
 
 // Type definitions for environment bindings
 export interface Env {
-  OPENAI_API_KEY: string;
-  ReminderAgent: DurableObjectNamespace;
+  /**
+   * Binding for Workers AI.  The `AI` binding makes the Workers AI client
+   * available on `env.AI`, allowing your agent to call models like
+   * Llama 3.3 via `env.AI.run()`【88027282093684†L116-L131】.  Configure this in
+   * `wrangler.toml` using the `[ai]` section.
+   */
+  AI: any;
+  /** Durable Object namespace binding for the ReminderAgent class. */
+  ReminderAgent: DuOableObjectNamespace;
 }
