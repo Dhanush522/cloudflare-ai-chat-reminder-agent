@@ -9,3 +9,9 @@ class_name = "ReminderAgent"
 [[migrations]]
 tag = "v1"
 new_sqlite_classes = ["ReminderAgent"]
+
+
+# Configure Workers AI binding to enable Llama 3.3 inference.
+# The name `AI` makes the Workers AI client available on `env.AI`.
+[ai]
+binding = "AI"
